@@ -6,7 +6,7 @@ writeDocument: aDocument
 	  - including files
 	  - then traversing their headings and sections
 	
-	Then, If you want o generate a big epub file, create a pillar file including all the other pillar files"
+	Then, If you want to generate a big epub file, create a pillar file including all the other pillar files"
 	self writeNavigationFileForDocument: aDocument.
 	self writeContentsFileForDocument: aDocument.
 	self writePackageManifestFile.
