@@ -2,7 +2,7 @@ visiting-document
 visitInternalLink: anInternalLink
 	| href |
 	href := String new.
-	self configuration separateOutputFiles not
+	self configuration separateOutputFiles
 		ifTrue: [ 
 			anInternalLink hasReference
 				ifTrue: [ href := href , anInternalLink referenceAsHTML ] ]
