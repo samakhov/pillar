@@ -8,4 +8,13 @@ createDocList: aPRDocListAnnotation
 			1 to: (aPRDocListAnnotation limit asInteger min: sortedFiles size) do: [ :index | 
 				self addAbstractOf: (sortedFiles at: index) to: document.
 				self addLink: (aPRDocListAnnotation path asFileReference / (sortedFiles at: index) basename) path pillarPrintString to: document ] ].
+		(workingDirectory / 'blog.pillar') 
+	writeStreamDo: [ :stream | stream nextPutAll: 'Youpppiiiiiii' ].
+	
+	self project queue nextPut: (
+		PRInputDocument new 
+		project: self project;
+		file: (workingDirectory / 'blog.pillar');
+		yourself).
+		
 	^ document

@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"workingDirectory"
+		"workingDirectory",
+		"project"
 	],
 	"name" : "PRDocumentListTransformer",
 	"type" : "normal"
