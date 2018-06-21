@@ -5,3 +5,5 @@ writer
 		each isAbstract not
 			and: [ each writerName = (project configuration propertyAt: #htmlWriter) ] ])
 				new
+				configuration: project configuration;
+				yourself
