@@ -8,5 +8,5 @@ activate
 	ZnServer default delegate: (
 	  (ZnStaticFileServerDelegate new)
 	     prefixFromString: baseurl;
-	     directory: self project baseDirectory;
+	     directory: self project baseDirectory / '_result/html/';
 	     yourself).
