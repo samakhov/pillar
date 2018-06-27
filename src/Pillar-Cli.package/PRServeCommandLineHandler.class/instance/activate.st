@@ -16,6 +16,8 @@ activate
 	     directory: self project baseDirectory / '_result/html/';
 	     yourself).
 	
+	FileStream stdout nextPutAll: 'Watching: tru jui';lf.
+	
 	watch ifTrue: [ 
 		watcher := PRWatcher new.
 		watcher project: self project.
