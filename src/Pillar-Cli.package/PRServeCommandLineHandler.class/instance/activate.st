@@ -18,7 +18,7 @@ activate
 	
 	FileStream stdout nextPutAll: 'Watching: true on';lf.
 	
-	watch ifTrue: [ 
+	"watch ifTrue: [ "
 		watcher := PRWatcher new.
 		watcher project: self project.
-		watcher start ].
+		watcher start. "]."
