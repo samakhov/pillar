@@ -2,7 +2,7 @@ activation
 activate
 	| baseurl watch port watcher |
 	baseurl := (self optionAt: 'baseurl' ifAbsent: [ '' ]).
-	watch := (self optionAt: 'w' ifPresent: [ :ignore | true] ifAbsent: [false]).
+	watch := (self optionAt: 't' ifPresent: [ :ignore | true] ifAbsent: [false]).
 	port := (self optionAt: 'p' ifPresent: [ :portString | portString asInteger ] ifAbsent: [8080]).
 	
 	FileStream stdout nextPutAll:
