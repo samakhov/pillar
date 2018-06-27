@@ -7,9 +7,6 @@ activate
 	
 	FileStream stdout nextPutAll:
 		'Serving website at: http://localhost:', port asString, '/', baseurl; lf.
-
-	FileStream stdout nextPutAll:
-		'Serving website at: http://localhost:', watch asString, '/', baseurl; lf.
 	
 	(ZnServer defaultOn: port) start.
 	
