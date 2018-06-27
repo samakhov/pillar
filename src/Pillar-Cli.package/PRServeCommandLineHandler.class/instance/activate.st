@@ -20,7 +20,7 @@ activate
 	     yourself).
 
 	
-	"watch ifTrue: [ "
+	watch ifTrue: [
 		watcher := PRWatcher new.
 		watcher project: self project.
-		watcher start. "]."
+		watcher start].
