@@ -7,6 +7,9 @@ activate
 	
 	FileStream stdout nextPutAll:
 		'Serving website at: http://localhost:', port asString, '/', baseurl; lf.
+		
+	FileStream stdout nextPutAll:
+		'Serving website at: http://localhost:', watch asString, '/', baseurl; lf.	
 	
 	(ZnServer defaultOn: port) start.
 	
@@ -16,8 +19,6 @@ activate
 	     directory: self project baseDirectory / '_result/html/';
 	     yourself).
 
-	FileStream stdout nextPutAll:
-		'Serving website at: http://localhost:', watch asString, '/', baseurl; lf.	
 	
 	"watch ifTrue: [ "
 		watcher := PRWatcher new.
