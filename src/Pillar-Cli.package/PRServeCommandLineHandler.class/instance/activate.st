@@ -15,8 +15,9 @@ activate
 	     prefixFromString: baseurl;
 	     directory: self project baseDirectory / '_result/html/';
 	     yourself).
-	
-	FileStream stdout nextPutAll: 'Watching: true on';lf.
+
+	FileStream stdout nextPutAll:
+		'Serving website at: http://localhost:', watch asString, '/', baseurl; lf.	
 	
 	"watch ifTrue: [ "
 		watcher := PRWatcher new.
