@@ -5,7 +5,7 @@ activate
 	watch := self hasOption:  #w.
 	port := (self optionAt: 'p' ifPresent: [ :portString | portString asInteger ] ifAbsent: [8080]).
 	
-	FileStream stdout nextPutAll:
+	self stdout nextPutAll:
 		'Serving website at: http://localhost:', port asString, '/', baseurl; lf.
 	
 	(ZnServer defaultOn: port) start.

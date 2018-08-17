@@ -1,4 +1,4 @@
 SystemOrganization addCategory: #'Pillar-Cli'!
-SystemOrganization addCategory: 'Pillar-Cli-Handlers'!
-SystemOrganization addCategory: 'Pillar-Cli-Model'!
-SystemOrganization addCategory: 'Pillar-Cli-Server'!
+SystemOrganization addCategory: #'Pillar-Cli-Handlers'!
+SystemOrganization addCategory: #'Pillar-Cli-Model'!
+SystemOrganization addCategory: #'Pillar-Cli-Server'!
